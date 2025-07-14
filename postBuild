@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Clone the tmm_fast repository
+git clone https://github.com/MLResearchAtOSRAM/tmm_fast.git
+
+# Install tmm_fast using pip (editable mode)
+pip install -e ./tmm_fast
+
+# Register the Jupyter kernel
+python -m ipykernel install --user --name=tmmfast-env --display-name "Python (TMM-FAST)"
